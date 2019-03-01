@@ -15,4 +15,5 @@ spec.source       = { :git => "https://github.com/Pancoit/TestSpec.git", :tag =>
 spec.source_files  = "TestSpec/Source/PGTDWTKit.framework/Headers/*.{h}"
 spec.public_header_files = "TestSpec/Source/PGTDWTKit.framework/Headers/PGTDWTKit.h"
 spec.vendored_frameworks = "TestSpec/Source/PGTDWTKit.framework"
+spec.library   = "swiftCoreGraphics","swiftFoundation","swiftMetal","swiftDarwin","swiftUIKit","swiftObjectiveC","swiftDispatch","swiftCoreImage","swiftQuartzCore","swiftCore","swiftCoreFoundation"
 end
