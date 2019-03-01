@@ -15,6 +15,7 @@
 		8824A54C2228FC520079BE5C /* TestSpecTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8824A54B2228FC520079BE5C /* TestSpecTests.swift */; };
 		8824A5572228FC520079BE5C /* TestSpecUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8824A5562228FC520079BE5C /* TestSpecUITests.swift */; };
 		8824A5662228FC970079BE5C /* Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8824A5652228FC970079BE5C /* Source.swift */; };
+		8824A568222905D30079BE5C /* PGTDWTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8824A567222905D30079BE5C /* PGTDWTKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		8824A5562228FC520079BE5C /* TestSpecUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSpecUITests.swift; sourceTree = "<group>"; };
 		8824A5582228FC520079BE5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8824A5652228FC970079BE5C /* Source.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Source.swift; sourceTree = "<group>"; };
+		8824A567222905D30079BE5C /* PGTDWTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PGTDWTKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8824A568222905D30079BE5C /* PGTDWTKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +134,7 @@
 		8824A5642228FC7E0079BE5C /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				8824A567222905D30079BE5C /* PGTDWTKit.framework */,
 				8824A5652228FC970079BE5C /* Source.swift */,
 			);
 			path = Source;
@@ -445,6 +449,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Source",
+				);
 				INFOPLIST_FILE = TestSpec/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -462,6 +470,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Source",
+				);
 				INFOPLIST_FILE = TestSpec/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
