@@ -12,8 +12,11 @@ spec.license      = { :type => "MIT", :file => "LICENSE" }
 spec.author             = { "HXRoot" => "907029382@qq.com" }
 spec.platform     = :ios, "8.0"
 spec.source       = { :git => "https://github.com/Pancoit/TestSpec.git", :tag => "#{spec.version}" }
-spec.source_files  = "TestSpec/Source/PGTDWTKit.framework/Headers/*.{h}"
-spec.public_header_files = "TestSpec/Source/PGTDWTKit.framework/Headers/PGTDWTKit.h"
-spec.vendored_frameworks = "TestSpec/Source/PGTDWTKit.framework"
+
+spec.source_files  = "TestSpec/Source/SDKFramework.framework/Headers/*.{h}"
+# spec.public_header_files = "TestSpec/Source/SDKFramework.framework/Headers/XKHttpNetworkHelper.h"
+spec.vendored_frameworks = "TestSpec/Source/SDKFramework.framework"
+spec.frameworks = 'UIKit',"Foundation"
 spec.library   = "swiftCoreGraphics","swiftFoundation","swiftMetal","swiftDarwin","swiftUIKit","swiftObjectiveC","swiftDispatch","swiftCoreImage","swiftQuartzCore","swiftCore","swiftCoreFoundation"
+spec.requires_arc = true
 end
